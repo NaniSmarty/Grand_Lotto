@@ -1,0 +1,33 @@
+2022-04-29 19:14:15,123 INFO process(40) Received from Client 600 E502142856~E502~29/04/2022~29/04/2022
+2022-04-29 19:14:41,094 ERROR DB_callsp(43) COALESCE types character varying and integer cannot be matched
+LINE 1: ...CE(DL_TOTSALE::VARCHAR,'0')||'|'||COALESCE(DL_win,0)||'|'||D...
+                                                             ^
+QUERY:  Select '0~'||DL_ST ||'|'||DL_Sales||'|'||DL_LINE||COALESCE(DL_CollectionLot,'0')||'|'||DL_LINE||'|'||'Total        '||'  '||'     '||COALESCE(DL_TOTSALE::VARCHAR,'0')||'|'||COALESCE(DL_win,0)||'|'||DL_LINE||'|'||COALESCE(DL_WinnLot,0)||'|'||DL_LINE||'|'||'Total           '||' '||'     '||COALESCE(DL_TOTCLAIM::VARCHAR,0)||'|'||                     
+              
+   'Total Sale Amount   : '||COALESCE(DL_TOTSALE::varchar,'0')||'|'||                      
+   'Total Payment Amount: '||COALESCE(DL_TOTCLAIM::varchar,'0')||'|'|| 
+  -- 'Joker Amount        : '||CAST(varchar,DL_JokerAmount)||'|'||
+   'Total               : '||COALESCE((DL_TOTSALE-DL_TOTCLAIM-DL_JokerAmount)::VARCHAR,'0')||'|'
+CONTEXT:  PL/pgSQL function cli_report_operator_cash_v2(character varying,character varying,character varying,text) line 166 at SQL statement
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.DatatypeMismatch: COALESCE types character varying and integer cannot be matched
+LINE 1: ...CE(DL_TOTSALE::VARCHAR,'0')||'|'||COALESCE(DL_win,0)||'|'||D...
+                                                             ^
+QUERY:  Select '0~'||DL_ST ||'|'||DL_Sales||'|'||DL_LINE||COALESCE(DL_CollectionLot,'0')||'|'||DL_LINE||'|'||'Total        '||'  '||'     '||COALESCE(DL_TOTSALE::VARCHAR,'0')||'|'||COALESCE(DL_win,0)||'|'||DL_LINE||'|'||COALESCE(DL_WinnLot,0)||'|'||DL_LINE||'|'||'Total           '||' '||'     '||COALESCE(DL_TOTCLAIM::VARCHAR,0)||'|'||                     
+              
+   'Total Sale Amount   : '||COALESCE(DL_TOTSALE::varchar,'0')||'|'||                      
+   'Total Payment Amount: '||COALESCE(DL_TOTCLAIM::varchar,'0')||'|'|| 
+  -- 'Joker Amount        : '||CAST(varchar,DL_JokerAmount)||'|'||
+   'Total               : '||COALESCE((DL_TOTSALE-DL_TOTCLAIM-DL_JokerAmount)::VARCHAR,'0')||'|'
+CONTEXT:  PL/pgSQL function cli_report_operator_cash_v2(character varying,character varying,character varying,text) line 166 at SQL statement
+
+2022-04-29 19:14:41,097 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-29 19:14:41,129 INFO process(45) Sent to client 600`E502142856`*
+2022-04-29 19:14:45,973 INFO process(40) Received from Client 600 E502142856~E502~29/04/2022~29/04/2022
+2022-04-29 19:23:35,473 INFO process(45) Sent to client 600`E502142856`*

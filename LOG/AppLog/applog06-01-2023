@@ -1,0 +1,36 @@
+2023-01-06 10:16:48,562 ERROR new_session(56) 
+Traceback (most recent call last):
+  File "/home/sasikumar/PycharmProjects/Pycharm/Grand_lotto/TCPSGrand_Lotto/TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "/usr/lib/python3.7/asyncio/tasks.py", line 449, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+2023-01-06 10:17:27,429 ERROR new_session(56) 
+Traceback (most recent call last):
+  File "/home/sasikumar/PycharmProjects/Pycharm/Grand_lotto/TCPSGrand_Lotto/TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "/usr/lib/python3.7/asyncio/tasks.py", line 449, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+2023-01-06 10:21:37,766 ERROR a_main(74) 
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 574, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 541, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1750, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.7/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sasikumar/PycharmProjects/Pycharm/Grand_lotto/TCPSGrand_Lotto/TCPListener.py", line 71, in a_main
+    conn, adres = await loop.sock_accept(server)
+  File "/usr/lib/python3.7/asyncio/selector_events.py", line 525, in sock_accept
+    return await fut
+concurrent.futures._base.CancelledError

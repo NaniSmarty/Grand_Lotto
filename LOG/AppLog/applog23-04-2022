@@ -1,0 +1,327 @@
+2022-04-23 12:57:21,340 INFO process(40) Received from Client 701 E502~~
+2022-04-23 12:57:42,489 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 12:57:51,036 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 12:57:55,129 INFO process(45) Sent to client 701`E502`*
+2022-04-23 13:00:13,755 INFO process(40) Received from Client 701 E502~~
+2022-04-23 13:00:16,834 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:00:22,280 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:00:22,286 INFO process(45) Sent to client 701`E502`*
+2022-04-23 13:00:25,427 INFO process(40) Received from Client 701 E502~~
+2022-04-23 13:00:28,613 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:00:30,554 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:00:30,555 INFO process(45) Sent to client 701`E502`*
+2022-04-23 13:00:32,587 INFO process(40) Received from Client 701 E502~~
+2022-04-23 13:00:36,712 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:00:38,308 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:00:38,311 INFO process(45) Sent to client 701`E502`*
+2022-04-23 13:00:40,803 INFO process(40) Received from Client 701 E502~~
+2022-04-23 13:00:47,760 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:00:57,702 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:00:57,705 INFO process(45) Sent to client 701`E502`*
+2022-04-23 13:03:07,025 INFO process(40) Received from Client 700 E502~~
+2022-04-23 13:03:10,055 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:03:13,748 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:03:13,754 INFO process(45) Sent to client 700`E502`*
+2022-04-23 13:03:17,051 INFO process(40) Received from Client 700 E502~~
+2022-04-23 13:03:26,812 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:03:40,215 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:03:40,216 INFO process(45) Sent to client 700`E502`*
+2022-04-23 13:03:42,275 INFO process(40) Received from Client 700 E502~~
+2022-04-23 13:04:18,307 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:04:26,288 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:04:26,290 INFO process(45) Sent to client 700`E502`*
+2022-04-23 13:05:39,195 INFO process(40) Received from Client 700 E502~~
+2022-04-23 13:05:57,498 ERROR DB_callsp(43) string index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: string index out of range
+2022-04-23 13:05:57,502 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:05:57,507 INFO process(45) Sent to client 700`E502`*
+2022-04-23 13:06:01,315 INFO process(40) Received from Client 700 E502~~
+2022-04-23 13:06:52,386 INFO process(41) Sent to client 700`E502`*
+2022-04-23 13:07:41,600 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:08:08,793 ERROR DB_callsp(43) not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+TypeError: not all arguments converted during string formatting
+2022-04-23 13:08:12,292 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:08:12,299 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:08:42,562 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:09:09,697 ERROR DB_callsp(43) not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+TypeError: not all arguments converted during string formatting
+2022-04-23 13:09:16,816 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:09:18,146 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:10:22,362 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:10:24,927 ERROR DB_callsp(43) unsupported format character 'd' (0x64) at index 34
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character 'd' (0x64) at index 34
+2022-04-23 13:10:25,085 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:10:46,463 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:10:55,154 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:11:09,140 INFO process(41) Sent to client 700`E502081409`*
+2022-04-23 13:11:33,874 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:12:03,609 ERROR DB_callsp(43) not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+TypeError: not all arguments converted during string formatting
+2022-04-23 13:12:03,611 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:12:03,612 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:14:24,289 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:14:27,328 ERROR DB_callsp(43) unsupported format character ';' (0x3b) at index 37
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character ';' (0x3b) at index 37
+2022-04-23 13:14:34,369 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:14:34,371 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:14:37,033 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:14:44,610 ERROR DB_callsp(43) unsupported format character ';' (0x3b) at index 37
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character ';' (0x3b) at index 37
+2022-04-23 13:14:44,613 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:14:44,617 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:14:46,537 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:14:50,765 ERROR DB_callsp(43) unsupported format character ';' (0x3b) at index 37
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character ';' (0x3b) at index 37
+2022-04-23 13:14:50,766 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:14:50,767 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:14:52,536 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:14:59,988 ERROR DB_callsp(43) unsupported format character ';' (0x3b) at index 37
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character ';' (0x3b) at index 37
+2022-04-23 13:14:59,992 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:14:59,994 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:15:02,257 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:15:22,365 INFO process(41) Sent to client 700`E502081409`*
+2022-04-23 13:15:53,001 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:16:07,385 ERROR DB_callsp(43) not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+TypeError: not all arguments converted during string formatting
+2022-04-23 13:16:07,388 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 13:16:07,391 INFO process(45) Sent to client 700`E502081409`*
+2022-04-23 13:16:45,536 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:16:58,317 ERROR DB_callsp(43) syntax error at or near ")"
+LINE 1: CALL getlast10transaction_gameid('E502', 'E502'));
+                                                        ^
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.SyntaxError: syntax error at or near ")"
+LINE 1: CALL getlast10transaction_gameid('E502', 'E502'));
+                                                        ^
+
+2022-04-23 13:17:01,866 INFO process(41) Sent to client 700`E502081409`*
+2022-04-23 13:18:48,816 INFO process(40) Received from Client 700 E502081409~E502~~
+2022-04-23 13:18:58,200 INFO process(45) Sent to client 700`E502081409`0~E502C9892A8~200~201~E502C98962E~100~201~E502C925CF4~100~201|*
+2022-04-23 17:08:54,682 INFO process(40) Received from Client 702 E502081409~E502~E502C98962E~
+2022-04-23 17:09:37,254 ERROR DB_callsp(43) invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.InvalidTransactionTermination: invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+
+2022-04-23 17:09:39,595 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 17:09:45,636 INFO process(45) Sent to client 702`E502081409`*
+2022-04-23 17:20:22,394 INFO process(40) Received from Client 702 E502081409~E502~E502C98962E~
+2022-04-23 17:21:02,697 INFO process(45) Sent to client 702`E502081409`-3~Transaction already cancelled*
+2022-04-23 17:21:59,113 INFO process(40) Received from Client 702 E502081409~E502~E502C989283~
+2022-04-23 17:22:14,897 INFO process(45) Sent to client 702`E502081409`-2~Sales Closed*
+2022-04-23 17:26:22,430 INFO process(40) Received from Client 702 E502123814~E502~E502C9892A8
+2022-04-23 17:26:33,646 ERROR DB_callsp(43) invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.InvalidTransactionTermination: invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+
+2022-04-23 17:26:53,181 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 17:26:53,183 INFO process(45) Sent to client 702`E502123814`*
+2022-04-23 17:27:00,874 INFO process(40) Received from Client 702 E502123814~E502~E502C9892A8
+2022-04-23 17:28:40,283 ERROR DB_callsp(43) invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.InvalidTransactionTermination: invalid transaction termination
+CONTEXT:  PL/pgSQL function transaction_cancel(character varying,text,text) line 407 at COMMIT
+
+2022-04-23 17:28:40,284 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 17:28:40,285 INFO process(45) Sent to client 702`E502123814`*
+2022-04-23 17:28:42,967 INFO process(40) Received from Client 702 E502123814~E502~E502C9892A8
+2022-04-23 17:28:50,448 INFO process(45) Sent to client 702`E502123814`-3~Transaction already cancelled*
+2022-04-23 17:32:40,565 INFO process(40) Received from Client 702 E502123814~E502~E502C989421
+2022-04-23 17:32:52,097 INFO process(45) Sent to client 702`E502123814`-2~Sales Closed*
+2022-04-23 17:32:54,927 INFO process(40) Received from Client 702 E502123814~E502~E502C989421
+2022-04-23 17:33:01,013 INFO process(45) Sent to client 702`E502123814`-2~Sales Closed*
+2022-04-23 17:33:16,116 INFO process(40) Received from Client 702 E502123814~E502~E502C989283
+2022-04-23 17:33:22,882 INFO process(45) Sent to client 702`E502123814`-2~Sales Closed*
+2022-04-23 17:40:54,500 INFO process(40) Received from Client 403 E502125050~E502~1~E502
+2022-04-23 17:41:00,305 ERROR DB_callsp(43) unrecognized configuration parameter "dl_ctimestamp"
+CONTEXT:  SQL statement "SET DL_CTIMESTAMP=''"
+PL/pgSQL function rpt_upd_pa_terminalclaimblock(character varying,integer,character varying,character varying,text) line 20 at SET
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.UndefinedObject: unrecognized configuration parameter "dl_ctimestamp"
+CONTEXT:  SQL statement "SET DL_CTIMESTAMP=''"
+PL/pgSQL function rpt_upd_pa_terminalclaimblock(character varying,integer,character varying,character varying,text) line 20 at SET
+
+2022-04-23 17:41:16,189 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 17:41:16,197 INFO process(45) Sent to client 403`E502125050`*
+2022-04-23 17:41:18,813 INFO process(40) Received from Client 403 E502125050~E502~1~E502
+2022-04-23 17:42:00,728 ERROR DB_callsp(43) unrecognized configuration parameter "dl_ctimestamp"
+CONTEXT:  SQL statement "SET DL_CTIMESTAMP=''"
+PL/pgSQL function rpt_upd_pa_terminalclaimblock(character varying,integer,character varying,character varying,text) line 20 at SET
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.UndefinedObject: unrecognized configuration parameter "dl_ctimestamp"
+CONTEXT:  SQL statement "SET DL_CTIMESTAMP=''"
+PL/pgSQL function rpt_upd_pa_terminalclaimblock(character varying,integer,character varying,character varying,text) line 20 at SET
+
+2022-04-23 17:42:00,730 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-23 17:42:00,734 INFO process(45) Sent to client 403`E502125050`*

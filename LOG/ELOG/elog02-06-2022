@@ -1,0 +1,36 @@
+2022-06-02 18:12:00,337 INFO process(40) Received from Client I am Superman
+2022-06-02 18:12:15,129 INFO process(45) Sent to client -1*
+2022-06-02 18:12:52,263 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:12:52,265 INFO process(45) Sent to client invalid method
+2022-06-02 18:13:19,743 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:13:19,747 INFO process(45) Sent to client invalid method
+2022-06-02 18:13:23,976 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:13:23,977 INFO process(45) Sent to client invalid method
+2022-06-02 18:13:28,863 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:13:28,866 INFO process(45) Sent to client invalid method
+2022-06-02 18:14:12,592 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:14:21,835 INFO process(45) Sent to client invalid method
+2022-06-02 18:20:30,668 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+  File "E:\Python\lib\asyncio\proactor_events.py", line 693, in sock_recv
+    return await self._proactor.recv(sock, n)
+  File "E:\Python\lib\asyncio\windows_events.py", line 454, in recv
+    ov.WSARecv(conn.fileno(), nbytes, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-06-02 18:27:23,569 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:27:23,569 INFO process(45) Sent to client invalid method
+2022-06-02 18:30:04,392 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:30:04,395 INFO process(45) Sent to client invalid method
+2022-06-02 18:41:50,339 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:41:50,340 INFO process(45) Sent to client invalid method
+2022-06-02 18:44:07,418 INFO process(40) Received from Client GRANDLOTTO
+2022-06-02 18:44:07,419 INFO process(45) Sent to client invalid method

@@ -1,0 +1,216 @@
+2022-04-11 14:05:53,824 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:05:54,759 ERROR parsedata(41) name 'str_ret' is not defined
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 39, in parsedata
+    return passquery(methodname, str_ret)
+NameError: name 'str_ret' is not defined
+2022-04-11 14:06:11,609 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:47> exception=AttributeError("'NoneType' object has no attribute 'encode'")>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 51, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 42, in process
+    await sender(conn, result)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 19, in sender
+    await loop.sock_sendall(conn, result.encode('utf8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2022-04-11 14:06:20,233 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:06:52,314 ERROR parsedata(41) name 'str_ret' is not defined
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 39, in parsedata
+    return passquery(methodname, str_ret)
+NameError: name 'str_ret' is not defined
+2022-04-11 14:06:52,317 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:47> exception=AttributeError("'NoneType' object has no attribute 'encode'")>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 51, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 42, in process
+    await sender(conn, result)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 19, in sender
+    await loop.sock_sendall(conn, result.encode('utf8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2022-04-11 14:06:59,267 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:07:33,576 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:07:43,699 ERROR passquery(29) name 'sub_str' is not defined
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 20, in passquery
+    ret_data = sub_str[1]+"`"
+NameError: name 'sub_str' is not defined
+2022-04-11 14:08:01,800 ERROR parsedata(41) local variable 'connection' referenced before assignment
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 39, in parsedata
+    return passquery(methodname, sub_str)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 31, in passquery
+    DB_commit(connection)
+UnboundLocalError: local variable 'connection' referenced before assignment
+2022-04-11 14:08:07,601 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:47> exception=AttributeError("'NoneType' object has no attribute 'encode'")>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 51, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 42, in process
+    await sender(conn, result)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 19, in sender
+    await loop.sock_sendall(conn, result.encode('utf8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2022-04-11 14:12:53,163 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:13:02,632 ERROR parsedata(39) local variable 'connection' referenced before assignment
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 20, in passquery
+    ret_data = sub_str[1]+"`"
+NameError: name 'sub_str' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 28, in passquery
+    except Exception as e:
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 28, in passquery
+    except Exception as e:
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_39_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.do_wait_suspend
+  File "D:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "D:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 39, in parsedata
+    return passquery(methodname, sub_str)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 31, in passquery
+    DB_commit(connection)
+UnboundLocalError: local variable 'connection' referenced before assignment
+2022-04-11 14:13:02,635 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:47> exception=AttributeError("'NoneType' object has no attribute 'encode'")>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 51, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 40, in process
+    result = data_extractor(all_Line)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 19, in sender
+    await loop.sock_sendall(conn, result.encode('utf8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2022-04-11 14:15:46,867 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:16:34,694 ERROR DB_connect(10) connection to server at "192.168.10.210", port 5432 failed: FATAL:  database "Grandlotto" does not exist
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 7, in DB_connect
+    conn = psycopg2.connect(database="Grandlotto", user="postgres", password="GiChn32*", host="192.168.10.210", port="5432",options='-c statement_timeout=500')
+  File "D:\PyCharmProjects\pythonProject\venv\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "192.168.10.210", port 5432 failed: FATAL:  database "Grandlotto" does not exist
+
+2022-04-11 14:16:34,730 ERROR DB_callsp(37) 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 32, in DB_callsp
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2022-04-11 14:16:34,731 ERROR passquery(29) 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 25, in passquery
+    for row in result:
+TypeError: 'NoneType' object is not iterable
+2022-04-11 14:16:34,731 ERROR DB_commit(17) 'NoneType' object has no attribute 'commit'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 15, in DB_commit
+    conn.commit()
+AttributeError: 'NoneType' object has no attribute 'commit'
+2022-04-11 14:16:34,732 ERROR DB_close(29) 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 27, in DB_close
+    conn.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2022-04-11 14:16:34,733 INFO process(44) Sent to client 5789012`
+2022-04-11 14:16:54,041 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:17:02,205 ERROR DB_callsp(37) argument 1 must be a string or unicode object: got tuple instead
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 33, in DB_callsp
+    cur.execute(data)
+TypeError: argument 1 must be a string or unicode object: got tuple instead
+2022-04-11 14:17:16,294 ERROR passquery(29) 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 25, in passquery
+    for row in result:
+TypeError: 'NoneType' object is not iterable
+2022-04-11 14:17:37,332 INFO process(44) Sent to client 5789012`
+2022-04-11 14:19:02,320 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:19:14,579 INFO process(40) Sent to client 5789012`
+2022-04-11 14:19:52,123 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:20:27,923 INFO process(40) Sent to client 5789012`
+2022-04-11 14:27:30,208 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:27:51,557 ERROR DB_callsp(38) name 'cursor' is not defined
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 35, in DB_callsp
+    result = cursor.fetchall()
+NameError: name 'cursor' is not defined
+2022-04-11 14:27:55,155 INFO process(40) Sent to client 5789012`
+2022-04-11 14:29:41,379 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:29:57,340 INFO process(40) Sent to client 5789012`
+2022-04-11 14:30:43,987 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:31:06,939 ERROR passquery(29) name 'result' is not defined
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 25, in passquery
+    for row in result:
+NameError: name 'result' is not defined
+2022-04-11 14:31:06,946 INFO process(44) Sent to client 5789012`
+2022-04-11 14:31:51,374 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:34:44,570 INFO process(40) Sent to client 5789012`
+2022-04-11 14:35:51,460 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:37:41,294 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:38:01,376 ERROR passquery(30) can only concatenate str (not "list") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 25, in passquery
+    ret_data += result
+TypeError: can only concatenate str (not "list") to str
+2022-04-11 14:49:35,293 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:50:20,473 INFO process(44) Sent to client 5789012`('h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134',)
+2022-04-11 14:50:24,511 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:50:40,945 INFO process(40) Sent to client 5789012`
+2022-04-11 14:51:04,280 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:51:18,421 ERROR passquery(30) can only concatenate str (not "tuple") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 25, in passquery
+    ret_data += result
+TypeError: can only concatenate str (not "tuple") to str
+2022-04-11 14:51:44,075 INFO process(44) Sent to client 5789012`
+2022-04-11 14:53:59,476 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 14:54:41,082 INFO process(44) Sent to client 5789012`('h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134',)
+2022-04-11 14:58:46,908 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:18:22,185 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:20:01,169 INFO process(40) Sent to client 5789012`
+2022-04-11 16:20:27,923 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:20:48,672 INFO process(40) Sent to client 5789012`
+2022-04-11 16:21:23,640 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:21:49,495 INFO process(40) Sent to client 5789012`
+2022-04-11 16:24:55,924 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:25:10,822 INFO process(40) Sent to client 5789012`
+2022-04-11 16:25:29,562 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:26:06,370 INFO process(44) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-11 16:44:39,308 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:44:58,847 INFO process(40) Sent to client 5789012`
+2022-04-11 16:47:21,374 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 16:47:36,654 INFO process(44) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-11 17:20:12,507 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 17:21:32,578 INFO process(44) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-11 17:23:44,404 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 17:23:56,434 INFO process(44) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-11 17:24:11,730 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 17:24:12,458 INFO process(44) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-11 17:25:13,142 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 17:25:40,577 INFO process(40) Sent to client 5789012`
+2022-04-11 17:28:13,568 INFO process(40) Received from Client 101 5789012~h01~1.0.0***
+2022-04-11 17:28:18,808 INFO process(45) Sent to client 5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134

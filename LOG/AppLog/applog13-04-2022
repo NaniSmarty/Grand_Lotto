@@ -1,0 +1,194 @@
+2022-04-13 14:29:05,245 INFO process(39) Received from Client 101 5789012~h01~1.0.0***
+2022-04-13 14:29:47,173 INFO process(44) Sent to client 101`5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-13 14:33:53,760 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=NameError("name 'data' is not defined")>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 35, in process
+    all_line = all_line.rstrip(data[-3])
+NameError: name 'data' is not defined
+2022-04-13 14:34:24,351 INFO process(40) Received from Client 101 5789012~h01~1.0.0
+2022-04-13 14:34:24,485 INFO process(45) Sent to client 101`5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-13 14:42:17,605 INFO process(40) Received from Client 101 5789012~h01~1.0.0
+2022-04-13 14:42:18,588 INFO process(45) Sent to client 101`5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-13 14:42:29,025 INFO process(40) Received from Client 101 5789012~h01~1.0.0
+2022-04-13 14:42:29,123 INFO process(45) Sent to client 101`5789012`h01~Test~401~100000~31051,31051,31051,31051,31051,31051~2~0~~~220.225.104.134
+2022-04-13 14:54:43,633 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 14:54:43,786 ERROR business_method(136) invalid literal for int() with base 10: 'E502C897C1F'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 24, in business_method
+    strquery1 = sub_str[1], sub_str[2]
+ValueError: invalid literal for int() with base 10: 'E502C897C1F'
+2022-04-13 14:54:43,789 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 14:55:15,459 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 14:56:02,125 ERROR business_method(136) invalid literal for int() with base 10: 'E502C897C1F'
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 24, in business_method
+    strquery1 = sub_str[1], sub_str[2]
+ValueError: invalid literal for int() with base 10: 'E502C897C1F'
+2022-04-13 14:56:14,800 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 14:56:21,449 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 14:58:54,839 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 14:59:05,727 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 15:00:53,556 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 15:01:06,407 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 15:01:08,803 ERROR business_method(136) list index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 30, in business_method
+    strquery1 = sub_str[1], sub_str[2], sub_str[3], sub_str[4], sub_str[5], sub_str[6], int(sub_str[7])
+IndexError: list index out of range
+2022-04-13 15:01:14,271 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 15:01:19,155 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 15:01:49,342 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 15:01:58,366 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 15:02:03,102 ERROR DB_callsp(43) unsupported format character 'd' (0x64) at index 53
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+ValueError: unsupported format character 'd' (0x64) at index 53
+2022-04-13 15:02:08,332 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-13 15:02:08,339 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 15:02:13,126 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 15:02:59,597 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 15:06:52,621 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 16:16:51,602 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 16:17:13,133 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 16:17:32,023 ERROR DB_callsp(43) procedure cli_logincheck_handheld_v4(unknown, unknown, unknown, unknown, unknown, unknown) does not exist
+LINE 1: CALL CLI_LOGINCHECK_handheld_V4('E502', '123456', '1.2.5', '...
+             ^
+HINT:  No procedure matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.UndefinedFunction: procedure cli_logincheck_handheld_v4(unknown, unknown, unknown, unknown, unknown, unknown) does not exist
+LINE 1: CALL CLI_LOGINCHECK_handheld_V4('E502', '123456', '1.2.5', '...
+             ^
+HINT:  No procedure matches the given name and argument types. You might need to add explicit type casts.
+
+2022-04-13 16:17:38,567 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-13 16:17:43,337 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 17:43:43,267 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 17:43:58,877 ERROR DB_callsp(43) invalid input syntax for type integer: "HD302,863771026251829"
+LINE 1: ...K_handheld_V4('E502', '123456', '1.2.5', '1.2.5', 'HD302,863...
+                                                             ^
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "HD302,863771026251829"
+LINE 1: ...K_handheld_V4('E502', '123456', '1.2.5', '1.2.5', 'HD302,863...
+                                                             ^
+
+2022-04-13 17:44:42,796 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-13 17:44:42,799 INFO process(45) Sent to client 102`E502101658`*
+2022-04-13 17:45:01,996 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 17:47:33,202 INFO process(41) Sent to client 102`E502101658`*
+2022-04-13 17:47:57,575 INFO process(40) Received from Client 102 E502101658~E502~123456~1.2.5~HD302,863771026251829~E502C897C1F~1
+2022-04-13 17:48:27,198 INFO process(45) Sent to client 102`E502101658`0~13/04/2022~01:04:32~2~2||19250.00|1|0|1|10,20,30,40,50|0.00|20,20000,5|1|8,8,3,3,120|0||1|1|0|5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,5000|1|1@LOTTO,2@SOCCER POOLS,|0,0,49|40|25000,25000,25000,25000,25000,25000,25000,25000,25000,25000,25000,25000,25000,25000,25000|1|1|1|0|1|1|8@Coupon 1-12 40-1B,|100,25000,5|1,1,1,1,1,1,1,1,1,1,1,1,1,1,1|1,1,1,1,1,1,1,1,1,1,1,1,1,1,|1|10@SAT SOCCERPOOL,14@MIDWK SOCCERPOOL,15@HALFTIME SOCCERPOOL,*
+2022-04-13 18:04:54,833 INFO process(40) Received from Client 200 E502010440~E502~401~1.2.5
+2022-04-13 18:05:49,076 INFO process(45) Sent to client 200`E502010440`1$240~5~1~139~04/13/2022~8:30 AM~1000~0~30600~0~GRANDLOTTO~0~LOTTO VAG~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~International-Wednesday~90~1|246~7~1~824~04/13/2022~8:30 AM~1000~0~30600~0~GRANDLOTTO~0~LOTTO VAG MACH~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Int_mac-Wednesday~90~1|204~4~1~219~04/13/2022~10:00 AM~1000~0~35100~0~GRANDLOTTO~0~GOLD~30600~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|210~6~1~1527~04/13/2022~10:00 AM~1000~0~35100~0~GRANDLOTTO~0~GOLD MACH~30600~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|130~4~1~406~04/13/2022~12:30 PM~1000~0~43200~0~GRANDLOTTO~0~GrandMaster~41400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|143~6~1~1998~04/13/2022~12:30 PM~1000~0~43200~0~GRANDLOTTO~0~GrandMaster MACH~41400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|122~4~1~772~04/13/2022~3:30 PM~1000~0~54000~0~GRANDLOTTO~0~ROYAL VAG~52200~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|142~6~1~1998~04/13/2022~3:30 PM~1000~0~54000~0~GRANDLOTTO~0~ROYAL VAG MACH~52200~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|222~10~1~43~04/13/2022~08:00 PM~1000~0~72000~0~GRANDLOTTO~0~Wed Soccerpool~72000~04/13/2022~06:00:00~21600~27/04/2022~BEST OF LUCK~~49~5|250~5~1~969~04/13/2022~8:15 PM~1000~0~72600~0~GRANDLOTTO~0~WED MIDWK~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~International-Wednesday~90~1|253~7~1~1715~04/13/2022~8:15 PM~1000~0~72600~0~GRANDLOTTO~0~WED MIDWK MACH~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Int_mac-Wednesday~90~1|113~4~1~629~04/13/2022~10:00 PM~1000~0~79200~0~GRANDLOTTO~0~Royal Chance~77400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|141~6~1~1998~04/13/2022~10:00 PM~1000~0~79200~0~GRANDLOTTO~0~ROYAL CHANCE MACH~77400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|201~10~1~41~04/16/2022~3:15 PM~1000~0~54900~0~GRANDLOTTO~0~SAT SOCCERPOOL~54900~04/10/2022~06:00:00~21600~04-30-2022~Care Line +234-09069592046~~49~5|#1~Nigeria~ALO~AUTHORISED SIGNATORY**
+2022-04-13 18:31:07,471 INFO process(40) Received from Client 200 E502010440~E502~401~1.2.5
+2022-04-13 18:31:53,821 INFO process(45) Sent to client 200`E502010440`1$240~5~1~139~04/13/2022~8:30 AM~1000~0~30600~0~GRANDLOTTO~0~LOTTO VAG~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~International-Wednesday~90~1|246~7~1~824~04/13/2022~8:30 AM~1000~0~30600~0~GRANDLOTTO~0~LOTTO VAG MACH~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Int_mac-Wednesday~90~1|204~4~1~219~04/13/2022~10:00 AM~1000~0~35100~0~GRANDLOTTO~0~GOLD~30600~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|210~6~1~1527~04/13/2022~10:00 AM~1000~0~35100~0~GRANDLOTTO~0~GOLD MACH~30600~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|130~4~1~406~04/13/2022~12:30 PM~1000~0~43200~0~GRANDLOTTO~0~GrandMaster~41400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|143~6~1~1998~04/13/2022~12:30 PM~1000~0~43200~0~GRANDLOTTO~0~GrandMaster MACH~41400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|122~4~1~772~04/13/2022~3:30 PM~1000~0~54000~0~GRANDLOTTO~0~ROYAL VAG~52200~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|142~6~1~1998~04/13/2022~3:30 PM~1000~0~54000~0~GRANDLOTTO~0~ROYAL VAG MACH~52200~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|222~10~1~43~04/13/2022~08:00 PM~1000~0~72000~0~GRANDLOTTO~0~Wed Soccerpool~72000~04/13/2022~06:00:00~21600~27/04/2022~BEST OF LUCK~~49~5|250~5~1~969~04/13/2022~8:15 PM~1000~0~72600~0~GRANDLOTTO~0~WED MIDWK~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~International-Wednesday~90~1|253~7~1~1715~04/13/2022~8:15 PM~1000~0~72600~0~GRANDLOTTO~0~WED MIDWK MACH~68400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Int_mac-Wednesday~90~1|113~4~1~629~04/13/2022~10:00 PM~1000~0~79200~0~GRANDLOTTO~0~Royal Chance~77400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor-Wednesday~90~1|141~6~1~1998~04/13/2022~10:00 PM~1000~0~79200~0~GRANDLOTTO~0~ROYAL CHANCE MACH~77400~04/12/2022~06:00:00~21600~04-20-2022~Care Line +234-09069592046~Indoor_mach-Wednesday~90~1|201~10~1~41~04/16/2022~3:15 PM~1000~0~54900~0~GRANDLOTTO~0~SAT SOCCERPOOL~54900~04/10/2022~06:00:00~21600~04-30-2022~Care Line +234-09069592046~~49~5|#1~Nigeria~ALO~AUTHORISED SIGNATORY**
+2022-04-13 18:32:07,715 INFO process(40) Received from Client 301 E502010519~E502~240~04/13/2022~A,11;12,1,S2,0,100,100,$~30600~E502140F3BF~1~100~E502C897C1F~0~1
+2022-04-13 18:33:29,202 ERROR DB_callsp(43) tuple index out of range
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+IndexError: tuple index out of range
+2022-04-13 18:33:43,297 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-13 18:33:43,299 INFO process(45) Sent to client 301`E502010519`*
+2022-04-13 18:35:50,599 INFO process(40) Received from Client 301 E502010519~E502~240~04/13/2022~A,11;12,1,S2,0,100,100,$~30600~E502140F3BF~1~100~E502C897C1F~0~1
+2022-04-13 18:36:06,267 INFO process(45) Sent to client 301`E502010519`4~Requested Draw is Closed*
+2022-04-13 18:48:51,656 ERROR new_session(56) 
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+  File "E:\Python\lib\asyncio\proactor_events.py", line 693, in sock_recv
+    return await self._proactor.recv(sock, n)
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\lib\asyncio\tasks.py", line 490, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+2022-04-13 18:49:06,864 ERROR new_session(56) 
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+  File "E:\Python\lib\asyncio\proactor_events.py", line 693, in sock_recv
+    return await self._proactor.recv(sock, n)
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\lib\asyncio\tasks.py", line 490, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+2022-04-13 18:50:18,265 ERROR new_session(56) 
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+  File "E:\Python\lib\asyncio\proactor_events.py", line 693, in sock_recv
+    return await self._proactor.recv(sock, n)
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\lib\asyncio\tasks.py", line 490, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError

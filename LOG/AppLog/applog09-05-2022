@@ -1,0 +1,106 @@
+2022-05-09 17:55:36,907 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=UnicodeDecodeError('utf-8', b'nhdbsgYTUY72ndKAHD7}k\x00\x04\x10\t\x00\x00\x00\n\x14\xd3\x00\x00\x00\x00\x00\x01\xa2h\x06\x00000000\x011\x01', 30, 31, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 30: invalid continuation byte
+2022-05-09 17:56:04,806 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=UnicodeDecodeError('utf-8', b'nhdbsgYTUY72ndKAHD7}k\x00\x04\x10\t\x00\x00\x00\n\x14\xd3\x00\x00\x00\x00\x00\x01\xa2h\x06\x00000000\x011\x01', 30, 31, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 30: invalid continuation byte
+2022-05-09 17:56:59,504 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=UnicodeDecodeError('utf-8', b'nhdbsgYTUY72ndKAHD7}k\x00\x04\x10\n\x00\x00\x00\n\x14\xd3\x00\x00\x00\x00\x00\x01\xa2h\x06\x00000000\x0112\x01', 30, 31, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 30: invalid continuation byte
+2022-05-09 17:58:07,629 ERROR default_exception_handler(1738) unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<a_main() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:62> exception=TypeError("'CancelledError' object is not callable")>
+Traceback (most recent call last):
+  File "E:\Python\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "E:\Python\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "E:\Python\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "E:\Python\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "E:\Python\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "E:\Python\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "E:\Python\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 71, in a_main
+    conn, adres = await loop.sock_accept(server)
+  File "E:\Python\lib\asyncio\proactor_events.py", line 705, in sock_accept
+    return await self._proactor.accept(sock)
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 72, in a_main
+    loop.create_task(new_session(conn))
+TypeError: 'CancelledError' object is not callable
+2022-05-09 17:59:12,606 INFO process(40) Received from Client 610 E502124424~E502~1.2.5~401~
+2022-05-09 17:59:53,883 ERROR DB_callsp(43) sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 40, in DB_callsp
+    result = result.join(list_result[0])
+TypeError: sequence item 0: expected str instance, NoneType found
+2022-05-09 17:59:57,819 ERROR business_method(139) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 135, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-05-09 17:59:57,834 INFO process(45) Sent to client 610`E502124424`*
+2022-05-09 18:00:50,329 INFO process(40) Received from Client 610 E502124424~E502~1.2.5~401~
+2022-05-09 18:01:39,536 ERROR DB_callsp(43) sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 40, in DB_callsp
+    result = result.join(list_result[0])
+TypeError: sequence item 0: expected str instance, NoneType found
+2022-05-09 18:01:39,540 ERROR business_method(139) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 135, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-05-09 18:01:39,547 INFO process(45) Sent to client 610`E502124424`*
+2022-05-09 18:01:55,002 INFO process(40) Received from Client 610 E502124331~E502~1.2.5~401~05/05/2022
+2022-05-09 18:02:48,625 ERROR DB_callsp(43) sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 40, in DB_callsp
+    result = result.join(list_result[0])
+TypeError: sequence item 0: expected str instance, NoneType found
+2022-05-09 18:02:57,762 ERROR business_method(139) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 135, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-05-09 18:02:57,770 INFO process(45) Sent to client 610`E502124331`*

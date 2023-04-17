@@ -1,0 +1,93 @@
+2022-04-19 16:00:26,137 INFO process(40) Received from Client 400 E502095938~E502~525522454Jjgj~1~E502C92A0AA~E502C9280B9~1
+2022-04-19 16:00:37,491 ERROR DB_callsp(43) invalid input syntax for type integer: "E502C9280B9"
+LINE 1: ...laim('525522454Jjgj', 'E502', '1', 'E502C92A0AA', 'E502C9280...
+                                                             ^
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "E502C9280B9"
+LINE 1: ...laim('525522454Jjgj', 'E502', '1', 'E502C92A0AA', 'E502C9280...
+                                                             ^
+
+2022-04-19 16:02:41,984 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-19 16:02:42,012 INFO process(45) Sent to client 400`E502095938`*
+2022-04-19 16:07:25,445 INFO process(40) Received from Client 400 E502095938~E502~525522454Jjgj~1~E502C92A0AA~E502C9280B9~1
+2022-04-19 16:07:30,661 ERROR DB_callsp(43) canceling statement due to statement timeout
+CONTEXT:  SQL statement "SELECT 1                         from Dbo_Archive.Transactionmaster_Cancel 
+ WHERE transactionid=DL_transaction and   cancelstatus=1"
+PL/pgSQL function cli_winner_checkandprizeclaim(character varying,character varying,integer,character varying,integer,character varying,text) line 114 at SQL statement
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 37, in DB_callsp
+    cur.execute(input,input1);
+psycopg2.errors.QueryCanceled: canceling statement due to statement timeout
+CONTEXT:  SQL statement "SELECT 1                         from Dbo_Archive.Transactionmaster_Cancel 
+ WHERE transactionid=DL_transaction and   cancelstatus=1"
+PL/pgSQL function cli_winner_checkandprizeclaim(character varying,character varying,integer,character varying,integer,character varying,text) line 114 at SQL statement
+
+2022-04-19 16:07:53,506 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-19 16:07:53,509 INFO process(45) Sent to client 400`E502095938`*
+2022-04-19 16:18:55,004 INFO process(40) Received from Client 400 E502095938~E502~525522454Jjgj~1~E502C92A0AA~E502C9280B9~1
+2022-04-19 16:22:06,335 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 43, in process
+    await sender(conn, result)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 19, in sender
+    await loop.sock_sendall(conn, result.encode('utf8'))
+  File "E:\Python\lib\asyncio\proactor_events.py", line 699, in sock_sendall
+    return await self._proactor.send(sock, data)
+  File "E:\Python\lib\asyncio\windows_events.py", line 537, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 16:22:06,367 ERROR default_exception_handler(1738) Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<new_session() done, defined at D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py:48> exception=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)>
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 52, in new_session
+    await asyncio.wait_for(process(conn), timeout=10)
+  File "E:\Python\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 31, in process
+    line = await receiver(conn)
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\TCPListener.py", line 12, in receiver
+    line = (await loop.sock_recv(conn, 1024)).decode('utf8')
+  File "E:\Python\lib\asyncio\proactor_events.py", line 693, in sock_recv
+    return await self._proactor.recv(sock, n)
+  File "E:\Python\lib\asyncio\windows_events.py", line 454, in recv
+    ov.WSARecv(conn.fileno(), nbytes, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 16:22:14,038 INFO process(40) Received from Client 602 E502081409~E502~~
+2022-04-19 16:23:15,246 ERROR DB_callsp(43) sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 40, in DB_callsp
+    result = result.join(list_result[0])
+TypeError: sequence item 0: expected str instance, NoneType found
+2022-04-19 16:23:19,047 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-19 16:23:19,058 INFO process(45) Sent to client 602`E502081409`*
+2022-04-19 16:24:47,968 INFO process(40) Received from Client 602 E502081409~E502~~
+2022-04-19 16:25:32,470 ERROR DB_callsp(43) sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\DBWrapper.py", line 40, in DB_callsp
+    result = result.join(list_result[0])
+TypeError: sequence item 0: expected str instance, NoneType found
+2022-04-19 16:25:32,474 ERROR business_method(136) can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\TCPSGrand_Lotto\Parser.py", line 132, in business_method
+    ret_data += result
+TypeError: can only concatenate str (not "NoneType") to str
+2022-04-19 16:25:32,516 INFO process(45) Sent to client 602`E502081409`*
